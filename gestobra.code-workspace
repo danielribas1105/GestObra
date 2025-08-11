@@ -1,0 +1,38 @@
+{
+  "folders": [{ "path": "back-gestobra" }, { "path": "front-gestobra" }],
+  "settings": {
+    "editor.formatOnSave": true,
+    "files.exclude": {
+      "**/__pycache__": true,
+      "**/.DS_Store": true,
+      "**/node_modules": true
+    },
+    "[python]": {
+      "python.defaultInterpreterPath": "${workspaceFolder:backend}/.venv/bin/python",
+      "editor.tabSize": 4
+    },
+    "[javascript]": {
+      "editor.tabSize": 2
+    },
+    "[typescript]": {
+      "editor.tabSize": 2
+    }
+  },
+  "tasks": {
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Iniciar Backend",
+        "type": "shell",
+        "command": "cd back-gestobra && .venv/Scripts/activate uvicorn app.main:app --reload",
+        "problemMatcher": []
+      },
+      {
+        "label": "Iniciar Frontend",
+        "type": "shell",
+        "command": "cd front-gestobra && npm run dev",
+        "problemMatcher": []
+      }
+    ]
+  }
+}
