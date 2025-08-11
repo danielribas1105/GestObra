@@ -5,8 +5,7 @@ export default function UsersPage() {
 	return (
 		<PageLayout>
 			<section className="flex flex-col">
-				<TitlePage title="Usuários" />
-				<div>Em desenvolvimento</div>
+				<TitlePage title="Usuários" placeholder="Procure pelo nome" textButton="Adicionar usuário" />
 			</section>
 		</PageLayout>
 	)

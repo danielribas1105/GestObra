@@ -1,4 +1,15 @@
-import { Calendar, Car, Construction, FileText, Home, Inbox, Search, Settings, Truck } from "lucide-react"
+import {
+	Calendar,
+	Car,
+	Construction,
+	FileText,
+	Home,
+	Inbox,
+	Search,
+	Settings,
+	Truck,
+	UserCircle2,
+} from "lucide-react"
 
 // Menu items.
 export const itemsMenu = [
@@ -18,13 +29,13 @@ export const itemsMenu = [
 		icon: Truck,
 	},
 	{
+		title: "Usuários",
+		url: "/users",
+		icon: UserCircle2,
+	},
+	{
 		title: "Relatórios",
 		url: "/reports",
 		icon: FileText,
-	},
-	{
-		title: "Configuração",
-		url: "/settings",
-		icon: Settings,
 	},
 ]
