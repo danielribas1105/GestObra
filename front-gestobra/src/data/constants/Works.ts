@@ -11,7 +11,7 @@ const works: Work[] = [
 		estado: "SP",
 		orcamento: 150000,
 		status: "ativa",
-		imagemURL: "/images/obras/obra-01.png",
+		imagemURL: "/works/obra-01.png",
 	},
 	{
 		id: 2,
@@ -23,7 +23,7 @@ const works: Work[] = [
 		estado: "RJ",
 		orcamento: 5000000,
 		status: "ativa",
-		imagemURL: "/images/obras/obra-01.png",
+		imagemURL: "/works/obra-01.png",
 	},
 	{
 		id: 3,
@@ -35,7 +35,7 @@ const works: Work[] = [
 		estado: "PR",
 		orcamento: 300000,
 		status: "paralisada",
-		imagemURL: "/images/obras/obra-01.png",
+		imagemURL: "/works/obra-01.png",
 	},
 	{
 		id: 4,
@@ -47,7 +47,7 @@ const works: Work[] = [
 		estado: "MG",
 		orcamento: 200000,
 		status: "inativa",
-		imagemURL: "/images/obras/obra-01.png",
+		imagemURL: "/works/obra-01.png",
 	},
 	{
 		id: 5,
@@ -59,7 +59,7 @@ const works: Work[] = [
 		estado: "RS",
 		orcamento: 600000,
 		status: "ativa",
-		imagemURL: "/images/obras/obra-01.png",
+		imagemURL: "/works/obra-01.png",
 	},
 	{
 		id: 6,
@@ -71,7 +71,7 @@ const works: Work[] = [
 		estado: "BA",
 		orcamento: 800000,
 		status: "paralisada",
-		imagemURL: "/images/obras/obra-01.png",
+		imagemURL: "/works/obra-01.png",
 	},
 	{
 		id: 7,
@@ -83,7 +83,7 @@ const works: Work[] = [
 		estado: "PE",
 		orcamento: 1200000,
 		status: "ativa",
-		imagemURL: "/images/obras/obra-01.png",
+		imagemURL: "/works/obra-01.png",
 	},
 	{
 		id: 8,
@@ -95,7 +95,7 @@ const works: Work[] = [
 		estado: "CE",
 		orcamento: 1000000,
 		status: "inativa",
-		imagemURL: "/images/obras/obra-01.png",
+		imagemURL: "/works/obra-01.png",
 	},
 	{
 		id: 9,
@@ -107,7 +107,7 @@ const works: Work[] = [
 		estado: "AM",
 		orcamento: 450000,
 		status: "ativa",
-		imagemURL: "/images/obras/obra-01.png",
+		imagemURL: "/works/obra-01.png",
 	},
 	{
 		id: 10,
@@ -119,7 +119,7 @@ const works: Work[] = [
 		estado: "MS",
 		orcamento: 300000,
 		status: "paralisada",
-		imagemURL: "/images/obras/obra-01.png",
+		imagemURL: "/works/obra-01.png",
 	},
 ]
 

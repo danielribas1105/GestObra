@@ -3,11 +3,11 @@ import Image from "next/image"
 import { IconCircleFilled } from "@tabler/icons-react"
 import Vehicle from "@/data/models/Vehicle"
 
-export interface CardVehicleProps {
+export interface VehicleCardProps {
 	vehicle: Vehicle
 }
 
-export default function CardVehicle({ vehicle }: CardVehicleProps) {
+export default function VehicleCard({ vehicle }: VehicleCardProps) {
 	return (
 		<Link href={`/veiculos/${vehicle.id}`}>
 			<article className="w-56 h-64 border-2 rounded-lg p-2 flex flex-col gap-2">
