@@ -9,7 +9,7 @@ export interface VehicleCardProps {
 
 export default function VehicleCard({ vehicle }: VehicleCardProps) {
 	return (
-		<Link href={`/veiculos/${vehicle.id}`}>
+		<Link href={`/vehicles/${vehicle.id}`}>
 			<article className="w-56 h-64 border-2 rounded-lg p-2 flex flex-col gap-2">
 				<div className="relative w-full h-36 flex justify-center overflow-hidden">
 					<Image

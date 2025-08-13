@@ -37,7 +37,7 @@ export default function Home() {
 	return (
 		<PageLayout>
 			<section>
-				<div className="flex flex-col">
+				<div className="flex flex-col gap-3 md:gap-0">
 					<TitlePage title="GestObra" placeholder="Busca" textButton="Adicionar Viagem" />
 					<div className="flex flex-col items-start justify-evenly text-xl">
 						<div>

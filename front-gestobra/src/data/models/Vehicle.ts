@@ -2,6 +2,7 @@ export default interface Vehicle {
 	id: number
 	nome: string
 	placa: string
+	motorista: string
 	ano_fabricacao: number
 	km: number
 	combustivel: string
