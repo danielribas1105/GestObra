@@ -1,21 +1,11 @@
-import {
-	Calendar,
-	Car,
-	Construction,
-	FileText,
-	Home,
-	Inbox,
-	Search,
-	Settings,
-	Truck,
-	UserCircle2,
-} from "lucide-react"
+import { IconLogout } from "@tabler/icons-react"
+import { Construction, FileText, Home, Truck, UserCircle2 } from "lucide-react"
 
 // Menu items.
 export const itemsMenu = [
 	{
 		title: "Home",
-		url: "/",
+		url: "/home",
 		icon: Home,
 	},
 	{
@@ -37,5 +27,25 @@ export const itemsMenu = [
 		title: "Relatórios",
 		url: "/reports",
 		icon: FileText,
+	},
+	{
+		title: "Logout",
+		url: "/",
+		icon: IconLogout,
+	},
+]
+
+export const menuLanding = [
+	{
+		title: "HOME",
+		url: "/",
+	},
+	{
+		title: "SOBRE NÓS",
+		url: "/sobre-nos",
+	},
+	{
+		title: "CONTATO",
+		url: "/contato",
 	},
 ]

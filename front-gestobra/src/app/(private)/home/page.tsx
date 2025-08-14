@@ -1,8 +1,6 @@
 "use client"
-import Header from "@/components/ui/header"
 import PageLayout from "@/components/ui/page-layout"
 import TitlePage from "@/components/ui/title-page"
-import Link from "next/link"
 import { useEffect, useState } from "react"
 
 interface ApiStatus {
@@ -10,7 +8,7 @@ interface ApiStatus {
 	timestamp: string
 }
 
-export default function LandingPage() {
+export default function Home() {
 	const [status, setStatus] = useState<ApiStatus>({
 		status: "Carregando...",
 		timestamp: "",
@@ -37,24 +35,21 @@ export default function LandingPage() {
 		return () => clearInterval(interval)
 	}, [])
 	return (
-		<>
-			<Header />
-			<PageLayout>
-				<section>
-					{/* <div className="flex flex-col gap-3 md:gap-0">
-						<div className="flex flex-col items-start justify-evenly text-xl">
-							<div>
-								Status:{" "}
-								<span className={status.status === "online" ? "text-green-600" : "text-red-600"}>
-									{status.status}
-								</span>
-							</div>
-							<div className="mt-2 text-sm text-gray-400">Última atualização: {status.timestamp}</div>
+		<PageLayout>
+			<section>
+				<div className="flex flex-col gap-3 md:gap-0">
+					<TitlePage title="GestObra" placeholder="Busca" textButton="Adicionar Viagem" />
+					<div className="flex flex-col items-start justify-evenly text-xl">
+						<div>
+							Status:{" "}
+							<span className={status.status === "online" ? "text-green-600" : "text-red-600"}>
+								{status.status}
+							</span>
 						</div>
-					</div> */}
-					Criar landing page
-				</section>
-			</PageLayout>
-		</>
+						<div className="mt-2 text-sm text-gray-400">Última atualização: {status.timestamp}</div>
+					</div>
+				</div>
+			</section>
+		</PageLayout>
 	)
 }
