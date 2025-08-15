@@ -1,8 +1,15 @@
 from fastapi import FastAPI
+from . import models, database, routes, auth
 from fastapi.middleware.cors import CORSMiddleware
 from datetime import datetime
 
 app = FastAPI(title="GestObra API", version="1.0.0")
+
+models.Base.metadata.create_all(bind=database.engine)
+
+app = FastAPI()
+app.include_router(routes.router)
+app.include_router(auth.router)
 
 # Libera acesso do frontend
 app.add_middleware(
