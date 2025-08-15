@@ -3,6 +3,9 @@ from . import models, database, routes, auth
 from fastapi.middleware.cors import CORSMiddleware
 from datetime import datetime
 
+""" pip install -r requirements.txt """
+""" uvicorn app.main:app --reload """
+
 app = FastAPI(title="GestObra API", version="1.0.0")
 
 models.Base.metadata.create_all(bind=database.engine)

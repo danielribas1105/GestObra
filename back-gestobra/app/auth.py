@@ -36,12 +36,12 @@ def usuario_atual(token: str = Depends(get_current_token), db: Session = Depends
     dados = verificar_token(token)
     if not dados:
         raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Token inválido ou expirado")
-    usuario = crud.buscar_usuario_por_email(db, dados["sub"])
+    usuario = crud.buscar_usuario_por_nome(db, dados["sub"])
     if not usuario:
         raise HTTPException(status_code=404, detail="Usuário não encontrado")
     return usuario
 
 # Exemplo de rota protegida
 @router.get("/perfil")
-def perfil(usuario=Depends(get_current_token)):
+def perfil(usuario=Depends(usuario_atual)):
     return {"mensagem": f"Bem-vindo, {usuario.nome}!"}
