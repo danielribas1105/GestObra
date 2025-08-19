@@ -1,5 +1,7 @@
 from fastapi import FastAPI
-from . import models, database, routes, auth
+
+from .db import database
+from . import models, routes, auth
 from fastapi.middleware.cors import CORSMiddleware
 from datetime import datetime
 
