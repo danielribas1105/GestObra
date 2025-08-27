@@ -1,8 +1,8 @@
 import PageLayout from "@/components/ui/page-layout"
 import TitlePage from "@/components/ui/title-page"
-import ListVehicles from "@/components/vehicle/list-vehicles"
+import ListCars from "@/components/car/list-cars"
 
-export default function VehiclesPage() {
+export default function CarsPage() {
 	return (
 		<PageLayout>
 			<section className="flex flex-col gap-7">
@@ -12,7 +12,7 @@ export default function VehiclesPage() {
 					textButton="Adicionar Veículo"
 				/>
 				<div className="flex justify-center">
-					<ListVehicles />
+					<ListCars />
 				</div>
 			</section>
 		</PageLayout>

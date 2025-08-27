@@ -1,4 +1,4 @@
-export default interface Vehicle {
+export default interface Car {
 	id: number
 	nome: string
 	cpf: string

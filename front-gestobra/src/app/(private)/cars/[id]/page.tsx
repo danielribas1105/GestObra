@@ -5,7 +5,7 @@ import TitlePage from "@/components/ui/title-page"
 import { IconCancel, IconDeviceFloppy } from "@tabler/icons-react"
 import Image from "next/image"
 
-export default function EditVehicle({ params }: { params: { id: number } }) {
+export default function EditCar({ params }: { params: { id: number } }) {
 	return (
 		<PageLayout>
 			<section className="flex flex-col gap-5">
@@ -13,7 +13,7 @@ export default function EditVehicle({ params }: { params: { id: number } }) {
 				<div className="flex border border-logo-blue-dark/80 rounded-lg p-4 text-logo-blue-dark">
 					<div className="relative w-64 h-64 flex justify-center overflow-hidden">
 						<Image
-							src="/vehicles/caminhao-basculante-cacamba.jpg"
+							src="/cars/caminhao-basculante-cacamba.jpg"
 							alt="Foto da veiculo"
 							fill
 							className="object-cover rounded-lg"

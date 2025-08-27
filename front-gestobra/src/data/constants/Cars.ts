@@ -1,6 +1,6 @@
-import Vehicle from "../models/Vehicle"
+import Car from "../models/Car"
 
-const vehicles: Vehicle[] = [
+const cars: Car[] = [
 	{
 		id: 1,
 		nome: "Caminhão Basculante",
@@ -13,7 +13,7 @@ const vehicles: Vehicle[] = [
 		capacidade_carga: "15 toneladas",
 		versatilidade: "Transporte e descarregamento de materiais",
 		status: "ativo",
-		imagemURL: "/vehicles/caminhao-basculante-cacamba.jpg",
+		imagemURL: "/cars/caminhao-basculante-cacamba.jpg",
 	},
 	{
 		id: 2,
@@ -27,7 +27,7 @@ const vehicles: Vehicle[] = [
 		capacidade_carga: "10 m³ de concreto",
 		versatilidade: "Mistura e transporte de concreto",
 		status: "ativo",
-		imagemURL: "/vehicles/caminhao-basculante-cacamba.jpg",
+		imagemURL: "/cars/caminhao-basculante-cacamba.jpg",
 	},
 	{
 		id: 3,
@@ -41,7 +41,7 @@ const vehicles: Vehicle[] = [
 		capacidade_carga: "20 toneladas",
 		versatilidade: "Movimentação de cargas pesadas",
 		status: "ativo",
-		imagemURL: "/vehicles/caminhao-basculante-cacamba.jpg",
+		imagemURL: "/cars/caminhao-basculante-cacamba.jpg",
 	},
 	{
 		id: 4,
@@ -55,7 +55,7 @@ const vehicles: Vehicle[] = [
 		capacidade_carga: "2 toneladas",
 		versatilidade: "Escavação e movimentação de terra",
 		status: "ativo",
-		imagemURL: "/vehicles/caminhao-basculante-cacamba.jpg",
+		imagemURL: "/cars/caminhao-basculante-cacamba.jpg",
 	},
 	{
 		id: 5,
@@ -69,7 +69,7 @@ const vehicles: Vehicle[] = [
 		capacidade_carga: "1 tonelada",
 		versatilidade: "Escavação e carregamento",
 		status: "ativo",
-		imagemURL: "/vehicles/caminhao-basculante-cacamba.jpg",
+		imagemURL: "/cars/caminhao-basculante-cacamba.jpg",
 	},
 	{
 		id: 6,
@@ -83,7 +83,7 @@ const vehicles: Vehicle[] = [
 		capacidade_carga: "4 toneladas",
 		versatilidade: "Carregamento de materiais",
 		status: "ativo",
-		imagemURL: "/vehicles/caminhao-basculante-cacamba.jpg",
+		imagemURL: "/cars/caminhao-basculante-cacamba.jpg",
 	},
 	{
 		id: 7,
@@ -97,7 +97,7 @@ const vehicles: Vehicle[] = [
 		capacidade_carga: "5 toneladas",
 		versatilidade: "Compactação de solo e asfalto",
 		status: "ativo",
-		imagemURL: "/vehicles/caminhao-basculante-cacamba.jpg",
+		imagemURL: "/cars/caminhao-basculante-cacamba.jpg",
 	},
 	{
 		id: 8,
@@ -111,7 +111,7 @@ const vehicles: Vehicle[] = [
 		capacidade_carga: "12 mil litros",
 		versatilidade: "Fornecimento de água para obras",
 		status: "inativo",
-		imagemURL: "/vehicles/caminhao-basculante-cacamba.jpg",
+		imagemURL: "/cars/caminhao-basculante-cacamba.jpg",
 	},
 	{
 		id: 9,
@@ -125,7 +125,7 @@ const vehicles: Vehicle[] = [
 		capacidade_carga: "10 toneladas",
 		versatilidade: "Movimentação de terra",
 		status: "ativo",
-		imagemURL: "/vehicles/caminhao-basculante-cacamba.jpg",
+		imagemURL: "/cars/caminhao-basculante-cacamba.jpg",
 	},
 	{
 		id: 10,
@@ -139,8 +139,8 @@ const vehicles: Vehicle[] = [
 		capacidade_carga: "0,8 toneladas",
 		versatilidade: "Escavação em locais pequenos",
 		status: "ativo",
-		imagemURL: "/vehicles/caminhao-basculante-cacamba.jpg",
+		imagemURL: "/cars/caminhao-basculante-cacamba.jpg",
 	},
 ]
 
-export default vehicles
+export default cars

@@ -1,5 +1,14 @@
 "use client"
 import PageLayout from "@/components/ui/page-layout"
+import {
+	Table,
+	TableBody,
+	TableCaption,
+	TableCell,
+	TableHead,
+	TableHeader,
+	TableRow,
+} from "@/components/ui/table"
 import TitlePage from "@/components/ui/title-page"
 import { useEffect, useState } from "react"
 
@@ -48,6 +57,31 @@ export default function Home() {
 						</div>
 						<div className="mt-2 text-sm text-gray-400">Última atualização: {status.timestamp}</div>
 					</div>
+				</div>
+				<div>
+					<Table>
+						<TableCaption>Lista das vigens realizadas</TableCaption>
+						<TableHeader>
+							<TableRow>
+								<TableHead className="w-[100px]">Data</TableHead>
+								<TableHead>Placa</TableHead>
+								<TableHead>Motorista</TableHead>
+								<TableHead className="text-right">M3</TableHead>
+								<TableHead>Origem</TableHead>
+								<TableHead>Destino</TableHead>
+							</TableRow>
+						</TableHeader>
+						<TableBody>
+							<TableRow>
+								<TableCell className="font-medium">26/08/2025</TableCell>
+								<TableCell>KQZ-7900</TableCell>
+								<TableCell>Zezinho</TableCell>
+								<TableCell className="text-right">14.00</TableCell>
+								<TableCell>BENTIVI</TableCell>
+								<TableCell>PERUGIA</TableCell>
+							</TableRow>
+						</TableBody>
+					</Table>
 				</div>
 			</section>
 		</PageLayout>

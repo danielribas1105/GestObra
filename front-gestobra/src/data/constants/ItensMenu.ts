@@ -1,7 +1,7 @@
 import { IconLogout } from "@tabler/icons-react"
 import { Construction, FileText, Home, Truck, UserCircle2 } from "lucide-react"
 
-// Menu items.
+// Menu web application
 export const itemsMenu = [
 	{
 		title: "Home",
@@ -15,7 +15,7 @@ export const itemsMenu = [
 	},
 	{
 		title: "Veículos",
-		url: "/vehicles",
+		url: "/cars",
 		icon: Truck,
 	},
 	{
@@ -35,6 +35,7 @@ export const itemsMenu = [
 	},
 ]
 
+// Menu landing page
 export const menuLanding = [
 	{
 		title: "HOME",
