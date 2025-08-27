@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/table"
 import TitlePage from "@/components/ui/title-page"
 import { useEffect, useState } from "react"
+import jobs from "@/data/constants/Jobs"
 
 interface ApiStatus {
 	status: string
@@ -72,14 +73,16 @@ export default function Home() {
 							</TableRow>
 						</TableHeader>
 						<TableBody>
-							<TableRow>
-								<TableCell className="font-medium">26/08/2025</TableCell>
-								<TableCell>KQZ-7900</TableCell>
-								<TableCell>Zezinho</TableCell>
-								<TableCell className="text-right">14.00</TableCell>
-								<TableCell>BENTIVI</TableCell>
-								<TableCell>PERUGIA</TableCell>
-							</TableRow>
+							{jobs.map((job) => (
+								<TableRow>
+									<TableCell className="font-medium">{job.data}</TableCell>
+									<TableCell>{job.placa}</TableCell>
+									<TableCell>{job.motorista}</TableCell>
+									<TableCell className="text-right">{job.m3}</TableCell>
+									<TableCell>{job.origem}</TableCell>
+									<TableCell>{job.destino}</TableCell>
+								</TableRow>
+							))}
 						</TableBody>
 					</Table>
 				</div>

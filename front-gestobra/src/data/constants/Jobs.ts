@@ -38,3 +38,5 @@ const jobs: Job[] = [
 		destino: "PERUGIA",
 	},
 ]
+
+export default jobs
