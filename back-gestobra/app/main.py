@@ -1,6 +1,8 @@
 from fastapi import FastAPI
+
+from .modules.users import model
 from .db import database
-from . import models, routes, auth
+from . import routes, auth
 from fastapi.middleware.cors import CORSMiddleware
 from datetime import datetime
 
@@ -10,7 +12,7 @@ from datetime import datetime
 app = FastAPI(title="GestObra API", version="1.0.0")
 
 # Cria tabelas no Postgres, se ainda não existirem
-models.Base.metadata.create_all(bind=database.engine)
+model.Base.metadata.create_all(bind=database.engine)
 
 # Inclui rotas
 app.include_router(routes.router)

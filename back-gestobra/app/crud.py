@@ -1,10 +1,12 @@
 from sqlalchemy.orm import Session
-from . import models, schemas
+
+from .modules.users import model
+from . import schemas
 from .security import gerar_hash_senha
 
 def criar_usuario(db: Session, usuario: schemas.UsuarioCreate):
     senha_hash = gerar_hash_senha(usuario.senha)
-    db_usuario = models.Usuario(
+    db_usuario = model.Usuario(
         nome=usuario.nome, 
         email=usuario.email, 
         telefone=usuario.telefone, 
@@ -17,10 +19,10 @@ def criar_usuario(db: Session, usuario: schemas.UsuarioCreate):
     return db_usuario
 
 def listar_usuarios(db: Session):
-    return db.query(models.Usuario).all()
+    return db.query(model.Usuario).all()
 
 def buscar_usuario_por_nome(db: Session, nome: str):
-    return db.query(models.Usuario).filter(models.Usuario.nome == nome).first()
+    return db.query(model.Usuario).filter(model.Usuario.nome == nome).first()
 
 def buscar_usuario_por_email(db: Session, email: str):
-    return db.query(models.Usuario).filter(models.Usuario.email == email).first()
+    return db.query(model.Usuario).filter(model.Usuario.email == email).first()
